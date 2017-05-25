@@ -5,8 +5,11 @@ class Calculator {
 
     }
 
-    public sum ( x: int, y: int ) : int {
-        return x + y
+    public sum ( x: int, y: int ) : { error: string, result: int } {
+        return {
+            error: null,
+            result: x + y
+        }
     }
 
 }
